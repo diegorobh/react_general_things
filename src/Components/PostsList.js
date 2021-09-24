@@ -1,15 +1,17 @@
 import React from 'react';
 import PostListChild from './PostListChild';
 
-const PostList = ()=>{
+const PostsList = ( { Posts } )=>{
+    const renderChilds = ()=>{
+        return Posts.map(post=>{
+            return <PostListChild />
+        })
+    }
     return (
         <ul>
-            <PostListChild />
-            <PostListChild />
-            <PostListChild />
-            <PostListChild />
+            { renderChilds() }
         </ul>
     )
 }
 
-export default PostList;
+export default PostsList;

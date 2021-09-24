@@ -1,0 +1,8 @@
+._ContainerNoAuth {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ background-color: lightgray;
+ width: 100%;
+ height: 100vh;
+}

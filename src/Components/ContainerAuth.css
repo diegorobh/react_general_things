@@ -1,0 +1,15 @@
+._ContainerAuth{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.leftContainer{
+    width: 70%;
+    height: 100vh;
+    background-color: lightgray;
+}
+.rightContainer{
+    width: 30%;
+    height: 100vh;
+    background-color: lightslategrey;
+}
