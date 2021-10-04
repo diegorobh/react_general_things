@@ -13,13 +13,16 @@ import './Components/ContainerNoAuth.css';
 import PostsList from './Components/PostsList';
 import { Fragment, useEffect, useState } from 'react';
 import Axios from 'axios';
+import { useSelector } from 'react-redux';
 
 function App() {
-  const [ loggedIn, setLoggedIn ]  = useState(false);
+  const [ loggedIn, setLoggedIn ]  = useState(true);
   const [ Posts, setPosts ] = useState([]);
+  const store = useSelector(state => state);
 
   useEffect(()=>{
     fetchPosts();
+    console.log("luego del fetch, esto es el resultado de store", store);
   },[]);
   const fetchPosts = async()=>{
     const { data } = await Axios.get("https://jsonplaceholder.typicode.com/posts");

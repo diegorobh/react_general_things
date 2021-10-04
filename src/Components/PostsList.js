@@ -1,9 +1,11 @@
 import React from 'react';
 import PostListChild from './PostListChild';
+import { useSelector } from 'react-redux';
 
-const PostsList = ( { Posts } )=>{
+const PostsList = ( { Posts } )=>{ 
+    const _reduxPosts = useSelector(store=>store.listPosts);
     const renderChilds = ()=>{
-        return Posts.map(post=>{
+        return _reduxPosts.map(post=>{
             return <PostListChild />
         })
     }
