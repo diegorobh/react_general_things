@@ -15,6 +15,9 @@ import { Fragment, useEffect, useState } from 'react';
 import Axios from 'axios';
 import { useSelector } from 'react-redux';
 
+import { Button } from 'antd';
+import './App.css';
+
 function App() {
   const [ loggedIn, setLoggedIn ]  = useState(true);
   const [ Posts, setPosts ] = useState([]);
@@ -31,8 +34,9 @@ function App() {
   }
   return (
     <Router>
-      <div>
+      <div className = "App" >
         <NavBar loggedIn = { loggedIn } />
+        <Button>Button with antd library</Button>
         {
           (loggedIn)
           ?
