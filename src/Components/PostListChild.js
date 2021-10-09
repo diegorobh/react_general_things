@@ -1,14 +1,14 @@
 import React from 'react';
+import { Card } from 'antd';
+import { Divider } from 'antd';
 
 const PostListChild = ()=>{
     return(
-        <li>
-            <ul>
-                <li>Nombre Usuario --- idPost</li>
-                <li>Título del Post</li>
-                <li>Descripción del Post</li>
-            </ul>
-        </li>
+        <Card title="Nombre Usuario --- idPos" style={ { marginBottom:"20px" } }>
+            Título del Post
+            <Divider />
+            Descripción del Post
+        </Card>
     )
 }
 

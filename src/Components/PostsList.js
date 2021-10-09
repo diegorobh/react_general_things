@@ -1,6 +1,7 @@
 import React from 'react';
 import PostListChild from './PostListChild';
 import { useSelector } from 'react-redux';
+import { Card } from 'antd';
 
 const PostsList = ( { Posts } )=>{ 
     const _reduxPosts = useSelector(store=>store.listPosts);
@@ -10,9 +11,9 @@ const PostsList = ( { Posts } )=>{
         })
     }
     return (
-        <ul>
+        <Card style={{padding:"10px"}}>
             { renderChilds() }
-        </ul>
+        </Card>
     )
 }
 

@@ -5,12 +5,13 @@
 }
 .leftContainer{
     width: 70%;
-    height: 100vh;
+    height: calc(100vh - 64px);
     background-color: lightgray;
+    overflow: auto;
 }
 .rightContainer{
     width: 30%;
-    height: 100vh;
+    height: calc(100vh - 64px);
     background-color: lightslategrey;
     padding:20px;
 }
