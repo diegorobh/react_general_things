@@ -25,6 +25,10 @@
   color: white;
 }
 
+.ant-form-item-explain.ant-form-item-explain-error{
+  color:white !important;
+}
+
 .App-link {
   color: #61dafb;
 }
