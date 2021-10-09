@@ -14,8 +14,6 @@ import PostsList from './Components/PostsList';
 import { Fragment, useEffect, useState } from 'react';
 import Axios from 'axios';
 import { useSelector } from 'react-redux';
-
-import { Button } from 'antd';
 import './App.css';
 
 function App() {
@@ -36,7 +34,6 @@ function App() {
     <Router>
       <div className = "App" >
         <NavBar loggedIn = { loggedIn } />
-        <Button>Button with antd library</Button>
         {
           (loggedIn)
           ?
